@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="background-image">
+    <div class="main">
+
+      <div class="nav">
+        <input class="input" type="text" placeholder=" City name" id="input">
+        <button class="location-map"><i class="fa-solid fa-location-crosshairs"></i></button>
+        <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="main-content" id="main-content">
+        <div class="error" id="error"></div>
+        <div class="content" id="content">
+      <div class="section1">
+        <div class="loction_city">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="city" id="city">Joddoh</p>
+        </div>
+        <div class="date_time">
+          <p id="date_time">wed,07 Aug</p>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="image">
+          <image id="image1" width = "110px" src="assets/assets/weather/clouds.svg"></image>
+        </div>
+        <div class="temp">
+          <p class="temp_p" id="temp_p">32 C</p>
+          <p class="cloud_data" id="cloud_data">Clouds</p>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="humidity-content">
+          <image width="27px" src="assets/assets/weather/icons8-humidity-50.png"></image>
+          <div>
+            <h4 class="humidity">Humidity</h4>
+            <h4 class="humidity-num" id="humidity">58%</h4>
+          </div>
+        </div>
+        <div class="wind-speed">
+          <image class="image" width="27px" src="./assets/assets/weather/windy-removebg-preview.png"></image>
+          <div>
+            <h4 class="wind-humidity">Wind Speed</h4>
+            <h4 class="wind-humidity-num" id="wind-speed">2.06 M/s</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="daycard" id="card-day">
+        
+      </div>
+        </div>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
