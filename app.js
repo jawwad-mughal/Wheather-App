@@ -4,7 +4,7 @@ let searchbtn = document.querySelector('#search-btn')
 
 searchbtn.addEventListener('click', function(){
     let city = document.querySelector('#input')
-    let cityName = city.value
+    let cityName = city.value.trim()
     city.value = ""
 
     let url = `http://api.weatherapi.com/v1/current.json?key=${apiKeys}&q=${cityName}&aqi=yes`
