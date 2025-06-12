@@ -73,6 +73,7 @@ searchbtn.addEventListener('click', function(){
         
 
         let days =document.querySelector('#card-day')
+        days.innerHTML = ""
         let forecastdata = data.forecast.forecastday 
             forecastdata.forEach(data => {
                 const date = new Date(data.date);
