@@ -7,7 +7,7 @@ searchbtn.addEventListener('click', function(){
     let cityName = city.value.trim()
     city.value = ""
 
-    let url = `http://api.weatherapi.com/v1/current.json?key=${apiKeys}&q=${cityName}&aqi=yes`
+    let url = `https://api.weatherapi.com/v1/current.json?key=${apiKeys}&q=${cityName}&aqi=yes`
     
     function weatherdata(url){
         return new Promise((resolve, reject) => {
@@ -63,7 +63,7 @@ searchbtn.addEventListener('click', function(){
     
     // forcast api call
     let forcast = new Promise((resolve, reject) => {
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKeys}&q=${cityName}&days=8`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKeys}&q=${cityName}&days=8`)
         .then(response => response.json())
         .then(data => resolve(data))
         .catch(error => reject(error.message))
@@ -101,4 +101,3 @@ searchbtn.addEventListener('click', function(){
     })
 })
 
-// font-Size
